@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color:red;
+    }
+        
+        #myhead1 {
+            background-color: black;
+    }    
+
+        #myhead2 {
+            
+        background-color: blue;
+    }
+
+        #myhead3 {
+        background-color: red;
+    }
+
+        #myhead4 {
+        background-color: burlywood;
+    }
+        
+        #myhead5 {
+            background-color: brown;
+
+    }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <h1 id="myhead1">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="myhead2">Itaque et obcaecati sit iste?</h1>
+    <h1 id="myhead3">Dolore molestias eveniet fugit sunt?</h1>
+    <h1>Dolores ratione sunt soluta non.</h1>
+    <h1>Quod consectetur perferendis natus recusandae?</h1>
+
+    <hr>
+    <h1>id attribute작성 시 주의점</h1>
+    <p>한 문서에 같은 id값을 갖는 요소가 존재하면 안됨.</p>
+    <p>즉 아래 코드는 잘못된 코드들</p>
+    <h1 id="myhead4">Lorem, ipsum.</h1>
+    <h1 id="myhead4">Lorem, ipsum dolor.</h1>
+
+    <p>id 값은 대소문자 구분됨</p>
+    <h1 id="myhead5">Lorem, ipsum.</h1>
+    <h1 id="myHead5">Hic, sunt.</h1>
+
+    <p>id 값에 사용할 수 있는 문자 : 영문대소문자, 숫자, -, _</p>
+    <p>문자로 시작해야함</p>
+    <p>아래처럼 쓰면 안됨</p>
+    <h1 id="6head">Lorem, ipsum dolor.</h1>
+    <h1 id="7, head">Lorem, ipsum dolor.</h1>
+
+    <p>id값은 하나의 요소가 여러개 가질 수 없음</p>
+    <p>아래처럼 쓰면 안됨</p>
+    <h1 id="myhead8" id="myhead9">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead10 myhead11">Nobis, id dolore?</h1>
+    <h1 id="myhead12, myhead13">Iusto, et esse?</h1>
+
+
+
+</body>
+</html>
