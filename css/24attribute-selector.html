@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        [title^="j"]{
+            color:blue;
+        }
+
+        [title$="a"]{
+            background-color: gold;
+        }
+
+        h1[title$="a"]{
+            font-size: 3em;
+        }
+
+        [title*="u"]{
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1[title]*5>lorem3 -->
+    <h1 title="jimin">Lorem, ipsum dolor.</h1>
+    <h1 title="jungkuk">Molestias, totam unde!</h1>
+    <h1 title="rm">Atque, velit. Maiores!</h1>
+    <h1 title="v">Commodi, amet culpa!</h1>
+    <h1 title="suga">Dolore, illum ducimus.</h1>
+
+    <!-- h2[title]*3>lorem3 -->
+    <h2 title="korea">Lorem, ipsum dolor.</h2>
+    <h2 title="seoul">Hic, dicta enim!</h2>
+    <h2 title="asia">Dolorem, eaque? Dolorum.</h2>
+
+</body>
+</html>
