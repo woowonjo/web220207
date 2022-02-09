@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        .note {
+            text-decoration: underline;
+        }
+
+        .error {
+            text-decoration: line-through;
+        }
+
+        #head3 {
+            font-size: 3em;
+        }
+
+        .note.error {
+            color : red;
+        }
+
+        p.note {
+            font-family: D2Coding, monospace;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- h1#head$.note*3>lorem3 -->
+    <h1 id="head1" class="note">Lorem, ipsum dolor.</h1>
+    <h1 id="head2" class="note">Nostrum, iste nemo.</h1>
+    <h1 id="head3" class="note">Labore, corrupti dicta.</h1>
+
+    <!-- h1#head$@4.error*3>lorem3 -->
+    <h1 id="head4" class="error">Lorem, ipsum dolor.</h1>
+    <h1 id="head5" class="error">Nihil, laboriosam animi?</h1>
+    <h1 id="head6" class="error">Labore, officia porro.</h1>
+
+    <!-- h1#head$@7.note.error*2>lorem3 -->
+    <h1 id="head7" class="note error">Lorem, ipsum dolor.</h1>
+    <h1 id="head8" class="note error">Nemo, aliquam. Suscipit!</h1>
+
+    <!-- p.note*2>lorem3 -->
+    <p class="note">Lorem, ipsum dolor.</p>
+    <p class="note">Excepturi, nemo optio?</p>
+
+
+
+
+</body>
+
+</html>
