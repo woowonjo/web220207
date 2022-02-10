@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .sub {
+            display: none;
+            position: absolute;
+            top: -5px;
+            left: 118px;
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+        }
+
+        .sub > li {
+            width: 120px
+            padding: 3px;
+            margin: 0px;
+        }
+
+        .main>li {
+            width: 120px;
+            position: relative;
+            padding: 3px;
+            margin: 0px;
+            background-color: black;
+            color: white;
+            box-sizing: border-box;
+            border: 5px solid black;
+        }
+
+        .main>li:hover {
+            border-right: 5px solid yellow;
+        }
+
+        .main>li:hover>.sub {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul.main>li*5>lorem1+ul.sub>li*3>lorem1 -->
+    <ul class="main">
+        <li>
+            Lorem.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Ullam.</li>
+                <li>Delectus.</li>
+            </ul>
+        </li>
+        <li>
+            Aut?
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Nam.</li>
+                <li>Fugiat?</li>
+            </ul>
+        </li>
+        <li>
+            Commodi!
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Ea.</li>
+                <li>Laborum?</li>
+            </ul>
+        </li>
+        <li>
+            Velit.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Distinctio.</li>
+                <li>Id?</li>
+            </ul>
+        </li>
+        <li>
+            Repellendus.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Ducimus!</li>
+                <li>Ipsam!</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
