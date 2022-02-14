@@ -15,16 +15,19 @@
 </head>
 
 <body>
-    <!-- img#image$*2 -->
-    <img src="돌고래.jpg" alt="" id="image1">
-    <img src="판다.jpg" alt="" id="image2">
+    <input type="text" id="input1" value="jimin">
+    <p id="msg"></p>
+
 
     <script>
-        document.getElementById("image1").src = "판다.jpg"
-        document.getElementById("image2").src = "돌고래.jpg"
-
+        document.querySelector("#input1").onkeyup = function () {
+            if (this.value.length < 3) {
+                document.querySelector("#msg").innerHTML = "3글자 이상 작성하세요.";
+            } else {
+                document.querySelector("#msg").innerHTML = "적당한 길이 입니다."
+            }
+        }
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

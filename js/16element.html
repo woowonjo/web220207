@@ -15,13 +15,18 @@
 </head>
 
 <body>
-    <!-- img#image$*2 -->
-    <img src="돌고래.jpg" alt="" id="image1">
-    <img src="판다.jpg" alt="" id="image2">
+    <!-- input#input1+h1#head1>lorem3 -->
+    <input type="text" id="input1">
+    <h1 id="head1">
+        Lorem, ipsum dolor.
+    </h1>
 
     <script>
-        document.getElementById("image1").src = "판다.jpg"
-        document.getElementById("image2").src = "돌고래.jpg"
+        document.getElementById("input1").onkeyup = function() {
+            // console.log("키업!");
+            // console.log(document.getElementById("input1").value);
+            document.getElementById("head1").style.color=document.getElementById("input1").value;
+        }
 
     </script>
 
