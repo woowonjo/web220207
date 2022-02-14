@@ -16,16 +16,21 @@
 
 <body>
     <!-- input#input1+h1#head1>lorem3 -->
-    <input type="text" id="input1">
+    <input type="text" id="input1"> <br>
+    <input type="text" id="input2">
     <h1 id="head1">
         Lorem, ipsum dolor.
     </h1>
 
     <script>
-        document.getElementById("input1").onkeyup = function() {
+        document.getElementById("input1").onkeyup = function () {
             // console.log("키업!");
             // console.log(document.getElementById("input1").value);
-            document.getElementById("head1").style.color=document.getElementById("input1").value;
+            document.getElementById("head1").style.color = document.getElementById("input1").value;
+        }
+
+        document.getElementById("input2").onkeyup = function () {
+            document.getElementById("head1").style.backgroundColor = document.getElementById("input2").value;
         }
 
     </script>
